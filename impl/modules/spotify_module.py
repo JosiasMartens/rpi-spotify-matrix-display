@@ -45,7 +45,7 @@ class SpotifyModule:
             
             device_whitelist = self.config['Spotify']['device_whitelist']
             for device in devices['devices']:
-                if device['name'] in device_whitelist and device['is_active']:
+                if device['name'] in device_whitelist and device['is_active']: 
                     return True
             return False
         else:
